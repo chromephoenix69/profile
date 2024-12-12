@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Profile Card */
+
+
+.profile-card img {
+  border-radius: 10%;
+  border: 5px solid #007bff;
+  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+
+
+/* Container */
+.container {
+  width: 500px;
+  margin: 50px auto; /* Added top margin */
+}
+
+.card {
+  background: lightgray; /* Simplified card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1, h2, p {
+  color: #333;
+}
+
+/* Inline List */
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-card {
+      width: 90%;
+  }
+  .profile-card img {
+      width: 80px;
+      height: 80px;
+  }
+}
+/* General Container Styling */
+.container {
+  width: 90%; /* Make it responsive */
+  max-width: 800px; /* Set a maximum width */
+  margin: 30px auto; /* Center the container */
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap; /* Wrap cards to the next row if needed */
+  gap: 20px; /* Add space between cards */
+  justify-content: center; /* Center cards in the container */
+}
+
+/* Individual Card Styling */
+.card {
+  background: white; /* White card background */
+  border: 10px solid #007bff;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Clip overflowed content (e.g., images) */
+  width: calc(50% - 20px); /* Make cards take up half the container width with spacing */
+  text-align: center; /* Center content inside the card */
+  padding: 20px; /* Inner spacing */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Card Image Styling */
+.card img {
+  width: 100%; /* Image fits the card width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add slight rounding to the image */
+  border: 5px solid #007bff;
+  margin-bottom: 15px; /* Add spacing below the image */
+}
+
+/* Card Headings and Text */
+.card h1, .card h2, .card p {
+  margin: 10px 0; /* Add spacing between elements */
+  color: #333; /* Neutral text color */
+}
+
+/* Button Styling */
+.card .btn {
+  background-color: #007bff; /* Bright blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px; /* Space above the button */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Media List Styling */
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex; /* Inline display */
+  justify-content: center; /* Center icons */
+  gap: 15px; /* Space between icons */
+}
+
+.list-inline > li a {
+  font-size: 1.5em;
+  color: #333;
+  transition: color 0.2s ease-in-out, transform 0.2s;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+.list-inline > li a {
+  font-size: 1.5em;
+  color: #333;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth animation */
+}
+
+.list-inline > li a:hover  {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.5); /* Slightly enlarge icon */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Cards take full width on smaller screens */
+  }
+}
